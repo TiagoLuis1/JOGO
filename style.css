@@ -9,12 +9,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f7f7f7;
+    background-color: #f7f7f7; /*Cor selecionada para definir o fundo*/
   }
   
   .game {
-    border-bottom: 5px solid;
-    height: 500px;
+    border-bottom: 5px solid; /*Foi selecionado 5px para definir a largura da barra que faz o chão*/
+    height: 500px; /*Define o tamnho da borda da tela do jogo*/
     width: 1000px;
     position: relative;
     overflow: hidden;
@@ -24,7 +24,7 @@
     position: absolute;
     top: 30px;
     left: 0;
-    font-size: x-large;
+    font-size: x-large; /*Fonte da letra que está a pontuação*/
   }
   
   .dino {
@@ -35,7 +35,7 @@
     height: 130px;
     background-size: 280px;
     background-repeat: no-repeat;
-    transform: scaleX(-1);
+    transform: scaleX(-1); /*Comando para inverter o GIF e deixar no lado certo*/
   }
   
   .cacto {
@@ -45,21 +45,21 @@
     width: 35px;
     height: 70px;
     background-size: 35px;
-    background-repeat: no-repeat;
-    animation: cacto 1.2s linear infinite;
+    background-repeat: no-repeat; /*O cacto some quando passa pela tela*/
+    animation: cacto 1.2s linear infinite; /*Velocidade do gerador de cactos na dela*/
   }
   
   @keyframes cacto {
     0% {
-      right: -20px;
+      right: -20px; /*Direção de onde vem o cacto*/
     }
     100% {
-      right: 850px;
+      right: 850px; /*Define para que lado vai o cacto*/
     }
   }
   
   .jump {
-    animation: jump 1s linear;
+    animation: jump 1s linear;/* Velocidade que é executado o pulo*/
   }
   
   @keyframes jump {
